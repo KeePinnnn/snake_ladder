@@ -13,8 +13,6 @@ class Snakes {
 };
 
 void Snakes::set_list() {
-    vector<int>::iterator pointer;
-    pointer = snake_vector.begin();
     for (int i = 0; i < 20; i++) {
         snake_vector.push_back(rand() % 100);
     }
@@ -36,7 +34,6 @@ void Snakes::set_list() {
     for (auto i = snake_vector.begin(); i != snake_vector.end(); i++) 
         cout << *i << endl;
 
-    cout << "start of sorting" << endl;
     while (snake_vector.size() > 0) {
         int head_index = rand() % snake_vector.size();
         int head_value = snake_vector[head_index];
