@@ -51,6 +51,7 @@ void Ladder::set_list() {
     // for (auto i = ladder_vector.begin(); i != ladder_vector.end(); i++) 
     //     cout << *i << endl;
 
+    cout << "ladder is being established" << endl;
     // testing to see if dict works 
     for (auto element : ladder_dict) {
         cout << element.first << " after first, here is second " << element.second << "\n";
