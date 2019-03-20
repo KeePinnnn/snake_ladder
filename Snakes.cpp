@@ -13,6 +13,7 @@ class Snakes {
 };
 
 void Snakes::set_list() {
+    srand(time(NULL));
     for (int i = 0; i < 20; i++) {
         snake_vector.push_back(rand() % 100);
     }

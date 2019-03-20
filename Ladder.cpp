@@ -12,7 +12,8 @@ class Ladder {
         void set_list();
 };
 
-void Snakes::set_list() {
+void Ladder::set_list() {
+    srand(time(NULL));
     for (int i = 0; i < 20; i++) {
         ladder_vector.push_back(rand() % 100);
     }
@@ -58,6 +59,6 @@ void Snakes::set_list() {
 
 // for testing purpose
 // int main() {
-//     Snakes s = Snakes();
-//     s.set_list();
+//     Ladder lad = Ladder();
+//     lad.set_list();
 // }
