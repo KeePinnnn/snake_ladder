@@ -32,9 +32,6 @@ void Snakes::set_list() {
         }
     }
 
-    for (auto i = snake_vector.begin(); i != snake_vector.end(); i++) 
-        cout << *i << endl;
-
     while (snake_vector.size() > 0) {
         int head_index = rand() % snake_vector.size();
         int head_value = snake_vector[head_index];
@@ -51,11 +48,10 @@ void Snakes::set_list() {
     // for (auto i = snake_vector.begin(); i != snake_vector.end(); i++) 
     //     cout << *i << endl;
 
-    cout << "snake is being established" << endl;
     // testing to see if dict works 
-    for (auto element : snake_dict) {
-        cout << element.first << " after first, here is second " << element.second << "\n";
-    }
+    // for (auto element : snake_dict) {
+    //     cout << element.first << " after first, here is second " << element.second << "\n";
+    // }
 }
 
 // for testing purpose

@@ -23,6 +23,18 @@ void Map::initialise() {
 
     Ladder l = Ladder();
     l.set_list();
+
+    string testing = "";
+    int value = 0;
+    for (int i = 0; i < row; i++) {
+        for (int n = 0; n < col; n++) {
+            value += 1;
+            grid[i][n] = value;
+            testing += to_string(value);
+        }
+    }
+
+    cout << testing << endl;
 }
 
 int main() {
